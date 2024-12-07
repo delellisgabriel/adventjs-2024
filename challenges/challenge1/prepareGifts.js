@@ -1,4 +1,4 @@
 const prepareGifts = (gifts) =>
-  Array.from(new Set(gifts.sort((a, b) => a - b)));
+  Array.from(new Set(gifts)).toSorted((a, b) => a - b);
 
 export default prepareGifts;
